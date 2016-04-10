@@ -39,21 +39,62 @@ app.get("/",function(req,res){
 app.get("/",function(req,res){
 	console.log("router in list");
 		res.render("list",{
-				title: '列表页'
+				title: '列表页',
+				movies:[{
+					_id:1,
+					doctor:'javan',
+					country:'china',
+					title:'钢铁侠',
+					year:2014,
+					poster:'http://r3.ykimg.com/05160000530EEB63675839160D0B79D5',
+					language:'chinese',
+					flash:'http://player.youku.com/player.php/sid/XNjA1Njc0NTUy/v.swf',
+					summary:'中国制造中国制造中国制造中国制造中国制造中国制造中国制造中国制造中国制造'
+					},{
+					_id:2,
+					doctor:'javan',
+					country:'china',
+					title:'钢铁侠',
+					year:2014,
+					poster:'http://r3.ykimg.com/05160000530EEB63675839160D0B79D5',
+					language:'chinese',
+					flash:'http://player.youku.com/player.php/sid/XNjA1Njc0NTUy/v.swf',
+					summary:'中国制造中国制造中国制造中国制造中国制造中国制造中国制造中国制造中国制造'
+				}]
 		})
 });
 
 app.get("/",function(req,res){
 	console.log("router in detail");
 		res.render("detail",{
-				title: '详情页'
+				title: '详情页',
+				movie:{
+					doctor:'javan',
+					country:'china',
+					title:'钢铁侠',
+					year:2014,
+					poster:'http://r3.ykimg.com/05160000530EEB63675839160D0B79D5',
+					language:'chinese',
+					flash:'http://player.youku.com/player.php/sid/XNjA1Njc0NTUy/v.swf',
+					summary:'中国制造中国制造中国制造中国制造中国制造中国制造中国制造中国制造中国制造'
+				}
 		})
 });
 
 app.get("/",function(req,res){
 	console.log("router in admin");
 		res.render("admin",{
-				title: '管理页'
+				title: '管理页',
+				movie:{
+					doctor:'',
+					country:'',
+					title:'',
+					year:'',
+					poster:'',
+					language:'',
+					flash:'',
+					summary:''
+					}
 		})
 });
 
