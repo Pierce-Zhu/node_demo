@@ -43,7 +43,7 @@ app.get("/",function(req,res){
 		})
 });
 
-app.get("/",function(req,res){
+app.get("/list",function(req,res){
 	console.log("router in list");
 		res.render("list",{
 				title: '列表页',
@@ -71,7 +71,7 @@ app.get("/",function(req,res){
 		})
 });
 
-app.get("/",function(req,res){
+app.get("/detail",function(req,res){
 	console.log("router in detail");
 		res.render("detail",{
 				title: '详情页',
@@ -88,7 +88,7 @@ app.get("/",function(req,res){
 		})
 });
 
-app.get("/",function(req,res){
+app.get("/admin",function(req,res){
 	console.log("router in admin");
 		res.render("admin",{
 				title: '管理页',
