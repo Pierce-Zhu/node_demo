@@ -12,32 +12,35 @@ block content
 				.form-group
 					label.col-sm-2.control-label(for="inputDoctor") 电影导演
 					.col-sm-10
-						input#inputTitle.form-control(type="text",name="movie[doctor]",value="#{movie.title}")
+						input#inputTitle.form-control(type="text",name="movie[doctor]",value="#{movie.doctor}")
 				.form-group
 					label.col-sm-2.control-label(for="inputCountry") 国家
 					.col-sm-10
-						input#inputTitle.form-control(type="text",name="movie[country]",value="#{movie.title}")
+						input#inputTitle.form-control(type="text",name="movie[country]",value="#{movie.country}")
 				.form-group
 					label.col-sm-2.control-label(for="inputLanguage") 语言
 					.col-sm-10
-						input#inputTitle.form-control(type="text",name="movie[language]",value="#{movie.title}")
+						input#inputTitle.form-control(type="text",name="movie[language]",value="#{movie.language}")
 				.form-group
 					label.col-sm-2.control-label(for="inputPoster") 海报地址
 					.col-sm-10
-						input#inputTitle.form-control(type="text",name="movie[poster]",value="#{movie.title}")
+						input#inputTitle.form-control(type="text",name="movie[poster]",value="#{movie.poster}")
 				.form-group
 					label.col-sm-2.control-label(for="inputFlash") 片源地址
 					.col-sm-10
-						input#inputTitle.form-control(type="text",name="movie[flash]",value="#{movie.title}")
+						input#inputTitle.form-control(type="text",name="movie[flash]",value="#{movie.flash}")
 				//.form-group
-					label.clo-sm-2.control-label(for="inputYear")上映年份
+					label.col-sm-2.control-label(for="inputYear") 上映年份
 					.col-sm-10
-						input#inputTitle.form-control(type="text",name="movie[year]")
-						value="#{movie.year}")
+						input#inputTitle.form-control(type="text",name="movie[year]",value="#{movie.year}")		
+				.form-group
+					label.col-sm-2.control-label(for="inputYear") 上映年份
+					.col-sm-10
+						input#inputTitle.form-control(type="text",name="movie[year]",value="#{movie.year}")
 				.form-group
 					label.col-sm-2.control-label(for="inputSummary") 电影简介
 					.col-sm-10
-						input#inputTitle.form-control(type="text",name="movie[summary]",value="#{movie.title}")
+						input#inputTitle.form-control(type="text",name="movie[summary]",value="#{movie.summary}")
 				.form-group
-					.col-sm-offset-2.col-sm-10 
-					button.btn.btn-default(type="submit")录入
+					.col-sm-offset-6.col-sm-6 
+					button.btn.btn-default(type="submit") 录入
