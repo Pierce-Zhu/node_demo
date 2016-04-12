@@ -32,7 +32,7 @@ var port = process.env.PORT || 3000;
 app.locals.moment = require('moment');
 
 // movie为mongodb的一个数据库
-mongoose.connect('mongodb://127.0.0.1/movie')
+mongoose.connect('mongodb://localhost/movie')
 
 app.set('views', './views/pages');
 app.set('view engine', 'jade');
