@@ -149,7 +149,7 @@ app.post('/admin/movie/new', function(req, res) {
         if (err) {
           console.log(err);
         }
-        res.redirect('/detail/:' + movie._id);
+        res.redirect('/detail/' + movie._id);
       });
     });
   } else {
@@ -167,7 +167,7 @@ app.post('/admin/movie/new', function(req, res) {
       if (err) {
         console.log(err);
       }
-      res.redirect('/detail/:' + movie._id);
+      res.redirect('/detail/' + movie._id);
     });
   }
 });
