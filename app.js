@@ -1,4 +1,4 @@
-// var express = require("express");
+/ + var express = require("express");
 // var path=require('path');
 // var mongoose = require('mongoose');
 // var _ = require('underscore');
@@ -171,8 +171,6 @@ app.post('/admin/movie/new', function(req, res) {
     });
   }
 });
-
-
 
 //list page
 app.get('/admin/list', function(req, res) {
